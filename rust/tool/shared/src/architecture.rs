@@ -19,7 +19,7 @@ impl Architecture {
     }
 
     pub fn efi_fallback_filename(&self) -> PathBuf {
-        format!("BOOT{}.EFI", self.efi_representation().to_ascii_uppercase()).into()
+        format!("GRUB{}.EFI", self.efi_representation().to_ascii_uppercase()).into()
     }
 }
 
